@@ -25,7 +25,11 @@
                     return data.json();
                 }).then(data2 => {
                     console.log(data2);
-                    showData.innerHTML = `${data2.id}`
+                    showData.innerHTML = `<ul>
+                    <li>${data2.id}</li> 
+                    <li>${data2.title}</li>
+
+                    </ul>`
                 })
         })
     </script>
